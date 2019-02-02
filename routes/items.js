@@ -5,7 +5,7 @@ const Items = require('../controllers/items-controller');
 const router = new Router();
 
 router.get('/', Items.getAllItems);
-router.get('/test', (ctx)=>ctx.ok('Test works!'));
+router.get('/test', (ctx)=>ctx.ok('Test route works!'));
 router.get('/:id', Items.getItem);
 router.post('/', Items.create);
 router.patch('/:id', Items.update);
