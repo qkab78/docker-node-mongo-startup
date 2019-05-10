@@ -2,15 +2,15 @@ version: '3'
 
 services:
   app:
-    container_name: docker-node
+    container_name: item-keeper-node
     restart: always
     build: .
     ports:
-      - '80:9000'
+      - '80:8080'
     links:
-      - mongo
-  mongo:
-    container_name: mongo
+      - item-keeper-mongo
+  item-keeper-mongo:
+    container_name: item-keeper-mongo
     image: mongo
     ports:
       - '27017:27017'

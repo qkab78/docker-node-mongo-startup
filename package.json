@@ -4,8 +4,10 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "@hapi/joi": "^15.0.2",
     "@koa/cors": "^2.2.3",
     "dotenv": "^6.2.0",
+    "joi-objectid": "^2.0.0",
     "koa": "^2.7.0",
     "koa-body": "^4.0.7",
     "koa-cors": "^0.0.16",

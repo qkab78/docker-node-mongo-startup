@@ -8,7 +8,7 @@ router.get('/', Items.getAllItems);
 router.get('/test', (ctx)=>ctx.ok('Test route works!'));
 router.get('/:id', Items.getItem);
 router.post('/', Items.create);
-router.patch('/:id', Items.update);
+router.put('/:id', Items.update);
 router.delete('/:id', Items.delete);
 
 module.exports = router.routes();
